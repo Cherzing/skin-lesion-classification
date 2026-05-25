@@ -1,0 +1,31 @@
+{
+  "data": {
+    "raw_root": "../data/raw",
+    "hair_removed_root": "../data/hair_removed",
+    "diff_root": "../data/difference",
+    "manifest_path": "../data/manifests/dataset_manifest.csv"
+  },
+  "model": {
+    "image_size": 160,
+    "embedding_dim": 512,
+    "pretrained": false,
+    "backbone_init_checkpoint": null
+  },
+  "train": {
+    "seed": 42,
+    "batch_size": 8,
+    "epochs": 50,
+    "learning_rate": 0.0001,
+    "weight_decay": 0.0001,
+    "early_stopping_patience": 10,
+    "num_workers": 0
+  },
+  "output": {
+    "checkpoints_dir": "../outputs/checkpoints",
+    "logs_dir": "../outputs/logs",
+    "results_dir": "../outputs/results",
+    "figures_dir": "../outputs/figures",
+    "training_report_path": "../outputs/training_report.md",
+    "test_report_path": "../outputs/test_report.md"
+  }
+}

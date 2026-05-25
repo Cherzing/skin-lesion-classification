@@ -1,0 +1,35 @@
+{
+  "data": {
+    "raw_root": "../../../../data/raw",
+    "hair_removed_root": "../../../../data/hair_removed",
+    "diff_root": "../../../../data/difference",
+    "manifest_path": "../../../../data/manifests/dataset_manifest.csv"
+  },
+  "model": {
+    "image_size": 160,
+    "embedding_dim": 256,
+    "pretrained": false,
+    "backbone_init_checkpoint": null,
+    "use_hair_removed_input": true,
+    "use_dual_stream": true,
+    "use_cbam": true,
+    "use_metric_head": false,
+    "use_difference_guidance": true
+  },
+  "train": {
+    "seed": 42,
+    "batch_size": 8,
+    "epochs": 5,
+    "learning_rate": 0.0001,
+    "weight_decay": 0.0001,
+    "num_workers": 0
+  },
+  "output": {
+    "checkpoints_dir": "checkpoints",
+    "logs_dir": "logs",
+    "results_dir": "results",
+    "figures_dir": "figures",
+    "training_report_path": "训练记录.md",
+    "test_report_path": "测试结果.md"
+  }
+}
